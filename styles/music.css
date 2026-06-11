@@ -1,0 +1,61 @@
+h1 {
+    font-size: 3em;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+
+}
+
+footer h2 {
+    font-family: 'Georgia', serif;
+    font-style: italic; 
+    background-color: #000000;
+    color:#ffffff;
+    padding: 20px;
+}
+
+footer p {
+    margin-top: 10px;
+    font-size: .7em;
+}
+
+p {
+    font-family: 'Verdana', sans-serif;
+}
+
+body {
+    margin: 20px;
+    padding: 20px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+header p, footer p {
+    margin-bottom: 10px;
+}
+
+header h1, footer h2 {
+    margin-top: 0px;
+    margin-bottom: 20px;
+}
+
+header, main, footer, img {
+    width: 100%;
+    padding: 5px;
+    margin: 0 auto;
+    display: block;
+}
+
+.desc {
+    font-size: .9em;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.pure-g article {
+    padding: 0 10px;
+    box-sizing: border-box;
+}
+
+header {
+    display: block;
+}
