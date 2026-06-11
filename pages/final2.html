@@ -33,7 +33,16 @@
         .feature {
             text-align: right;
         }
+        
     </style>
+    <div id="nav-placeholder"></div>
+    <script>
+        fetch('nav.html')
+        .then(response => response.text())
+        .then(data => {
+        document.getElementById('nav-placeholder').innerHTML = data;
+        });
+    </script>
     <main>
         <p class="feature">FEATURE <strong>93</strong></p>
         <section class="pure-u">

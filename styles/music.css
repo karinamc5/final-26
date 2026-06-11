@@ -59,3 +59,11 @@ header, main, footer, img {
 header {
     display: block;
 }
+
+img {
+    display: block;
+    max-width: 1500px;
+    width: 100%;
+    height: auto;
+    margin: 0 auto 20px;
+}
