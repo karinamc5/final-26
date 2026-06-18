@@ -1,23 +1,13 @@
-// fetch('nav.html')
+// Wait until nav.html is loaded, then attach toggle behavior using delegation.
 
-//  .then(response => response.text())
+document.addEventListener('click', function (event) {
+    const toggleButton = event.target.closest('.toggle-button');
+    if (!toggleButton) {
+        return;
+    }
 
-//  .then(data => {
-
-// document.getElementById('nav-placeholder').innerHTML = data;
-
-// Wait until nav.html is loaded, THEN attach toggle behavior
-
-const toggleButton = document.getElementsByClassName('toggle-button')[0];
-
-const navbarLinks = document.getElementsByClassName('hamish')[0];
-
-if (toggleButton && navbarLinks) {
-
-toggleButton.addEventListener('click', () => {
-
-navbarLinks.classList.toggle('active');
-
- });
-
- }
+    const navbarLinks = document.getElementsByClassName('hamish')[0];
+    if (navbarLinks) {
+        navbarLinks.classList.toggle('active');
+    }
+});

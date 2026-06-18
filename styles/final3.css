@@ -19,3 +19,35 @@ h1, h2 {
 .categories {
     padding: 35px 0;
 }
+
+@media screen and (max-width: 480px) {
+    h1 {
+        font-size: 4.5em;
+        line-height: 0.9;
+        margin-bottom: 0.4em;
+        word-wrap: break-word;
+    }
+
+    .categories .pure-u-1-2 {
+        width: 100%;
+        display: block;
+    }
+
+    .categories .pure-g > div,
+    .categories .pure-g > .pure-u-1-2 {
+        width: 100%;
+        display: block;
+    }
+
+    .categories ul {
+        padding-left: 0;
+    }
+
+    .categories li {
+        margin-bottom: 0.75em;
+    }
+
+    main {
+        padding: 20px;
+    }
+}

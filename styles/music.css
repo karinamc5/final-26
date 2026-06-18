@@ -11,6 +11,9 @@ footer h2 {
     background-color: #000000;
     color:#ffffff;
     padding: 20px;
+    margin: 0;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 footer p {
@@ -66,4 +69,10 @@ img {
     width: 100%;
     height: auto;
     margin: 0 auto 20px;
+}
+
+.footer {
+    font-size: .7em;
+    padding: 2px 5px;
+    margin-bottom: 5px;
 }
