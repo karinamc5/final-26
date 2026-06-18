@@ -9,16 +9,19 @@ if (toggleButton && navbarLinks) {
     });
 }
 
+// Mobile-nav loaded
+console.log('mobile-nav: loaded');
+
 // Normalize nav links inserted from pages/nav.html so they work for local dev, live preview, and GitHub Pages
 const navLinks = document.querySelectorAll('.hamish a[data-target]');
 if (navLinks.length) {
     const inPages = location.pathname.includes('/pages/');
-    const isLocal = location.hostname === '127.0.0.1' || location.hostname === 'localhost' || location.hostname === '';
+    const isLocalHost = ['127.0.0.1', 'localhost', ''].includes(location.hostname) || location.search.includes('vscode-livepreview');
     const repo = 'final-26';
     navLinks.forEach(a => {
         const t = a.getAttribute('data-target');
         let href = '#';
-        if (isLocal) {
+        if (isLocalHost) {
             // local dev or live preview: use relative paths
             href = inPages ? ((t === 'index') ? '../index.html' : `${t}.html`) : ((t === 'index') ? 'index.html' : `pages/${t}.html`);
         } else {
@@ -26,5 +29,6 @@ if (navLinks.length) {
             href = (t === 'index') ? `/${repo}/index.html` : `/${repo}/pages/${t}.html`;
         }
         a.setAttribute('href', href);
+        console.log('mobile-nav: set link', t, '=>', href);
     });
 }
