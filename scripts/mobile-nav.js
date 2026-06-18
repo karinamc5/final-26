@@ -6,7 +6,7 @@ function fixNavLinks() {
     document.querySelectorAll('.hamish a[data-target]').forEach((anchor) => {
         const target = anchor.dataset.target;
         if (isNested) {
-            anchor.href = target;
+            anchor.href = target === 'index.html' ? `../${target}` : target;
         } else {
             anchor.href = target === 'index.html' ? 'index.html' : `pages/${target}`;
         }
