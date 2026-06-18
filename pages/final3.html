@@ -10,6 +10,49 @@
     <link rel="stylesheet" href="styles/mobile.css" type="text/css" media="only screen and (max-width: 480px)">
 </head>
 <body>
+    <style>
+        li {
+            list-style-type: none;
+        }
+
+        .genre-list {
+        list-style-type: none;
+        padding: 0;
+        }
+
+        .genre-list li {
+        margin-bottom: 10px;
+        }
+
+        .band {
+        display: block;
+        font-weight: bold;
+        }
+
+        .album {
+        display: block;
+        margin-left: 35px;
+        font-size: 0.9em;
+        font-style: italic;
+        color:rgb(155, 155, 155)
+        }
+
+        h1 {
+            font-size: 16em;
+            color: white;
+            -webkit-text-stroke: 2px black;
+            font-style: italic;
+        }
+
+        h1, li {
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        main {
+            padding: 50px
+        }
+
+    </style>
         <div id="nav-placeholder"></div>
     <script>
         fetch('../pages/nav.html')
@@ -20,7 +63,7 @@
     </script>
     <header>
         <p class="feature"> <strong>74 </strong>FEATURE</p>
-        <h1>Metal vs. Emo</h1>
+        <h1 class="stroke">Metal vs. Emo</h1>
     </header>
     <main>
         <section>
@@ -32,11 +75,32 @@
                     <div class="pure-g">
                         <div class="pure-u-1-2">
                         <h3 >CHRISTIAN:</h3>
-                        <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.</p>
+                        <ul>
+                            <li><span class="band">Emery</span><span class="album">The Weak's End</span></li>
+                            <li><span class="band">Project 86</span><span class="album">Drawing Black Lines</span></li>
+                            <li><span class="band">Blindside</span><span class="album">A Thought Crushed My Mind</span></li>
+                            <li><span class="band">Norma Jean</span><span class="album">Bless the Martyr and Kiss the Child</span></li>
+                            <li><span class="band">Cool Hand Luke</span><span class="album">I Fought Myself and Tore Myself</span></li>
+                            <li><span class="band">Copeland</span><span class="album">Beneath Medicine Tree</span></li>
+                            <li><span class="band">Dashboard Confessional</span><span class="album">The Places You Have Come to Fear...</span></li>
+                            <li><span class="band">238</span><span class="album">Regulate the Chemicals</span></li>
+                            <li><span class="band">Underoath</span><span class="album">They're Only Chasing Safety</span></li>
+                            <li><span class="band">mewithoutYou</span><span class="album">A -> B Life</span></li>
                         </div>
                         <div class="pure-u-1-2">
                         <h3>SECULAR:</h3>
-                        <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.</p>
+                        <ul>
+                            <li><span class="band">Refused</span><span class="album">The Shape of Punk to Come</span></li>
+                            <li><span class="band">Taking Back Sunday</span><span class="album">Tell All Your Friends</span></li>
+                            <li><span class="band">Jimmy Eat World</span><span class="album">Clarity</span></li>
+                            <li><span class="band">Weezer</span><span class="album">Weezer (Blue Album)</span></li>
+                            <li><span class="band">Coheed and Cambria</span><span class="album">In Keeping Secrets of Silent Earth: 3</span></li>
+                            <li><span class="band">At The Drive In</span><span class="album">Relationship of Command</span></li>
+                            <li><span class="band">Thursday</span><span class="album">Full Collapse</span></li>
+                            <li><span class="band">Brand New</span><span class="album">Your Favorite Weapon</span></li>
+                            <li><span class="band">The Used</span><span class="album">The Used</span></li>
+                            <li><span class="band">Death Cab for Cutie</span><span class="album">Transatlanticism</span></li>
+                        </ul>
                         </div>
                     </div>
             </article>
@@ -45,11 +109,33 @@
                     <div class="pure-g">
                         <div class="pure-u-1-2">
                         <h3 >CHRISTIAN:</h3>
-                        <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.</p>
+                        <ul>
+                           <li><span class="band">Vengeance Rising</span><span class="album">Human Sacrifice</span></li>
+                            <li><span class="band">Deliverance</span><span class="album">Weapons of Our Warfare</span></li>
+                            <li><span class="band">Tourniquet</span><span class="album">Stop the Bleeding</span></li>
+                            <li><span class="band">Mortification</span><span class="album">Scrolls of the Megilloth</span></li>
+                            <li><span class="band">Believer</span><span class="album">Dimensions</span></li>
+                            <li><span class="band">Antestor</span><span class="album">Return of the Black Death</span></li>
+                            <li><span class="band">Stryper</span><span class="album">To Hell with the Devil</span></li>
+                            <li><span class="band">Crimson Moonlight</span><span class="album">The Covenant Progress</span></li>
+                            <li><span class="band">Horde</span><span class="album">Hellig Usvart</span></li>
+                            <li><span class="band">Paramaecium</span><span class="album">Exhumed of the Earth</span></li>
+                        </ul>
                         </div>
                         <div class="pure-u-1-2">
                         <h3>SECULAR:</h3>
-                        <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.</p>
+                        <ul>
+                            <li><span class="band">Black Sabbath</span><span class="album">Paranoid</span></li>
+                            <li><span class="band">Possessed</span><span class="album">Seven Churches</span></li>
+                            <li><span class="band">Venom</span><span class="album">Welcome to Hell</span></li>
+                            <li><span class="band">Iron Maiden</span><span class="album">Number of the Beast</span></li>
+                            <li><span class="band">Emperor</span><span class="album">In the Nightside Eclipse</span></li>
+                            <li><span class="band">Motorhead</span><span class="album">Ace of Spades</span></li>
+                            <li><span class="band">Slayer</span><span class="album">Reign in Blood</span></li>
+                            <li><span class="band">Carcass</span><span class="album">Symphonies of Sickness</span></li>
+                            <li><span class="band">At the Gates</span><span class="album">Slaughter of the Soul</span></li>
+                            <li><span class="band">Helloween</span><span class="album">Keeper Of The Seven Keys Part II</span></li>
+                        </ul>
                         </div>
                     </div>
             </article>
@@ -69,5 +155,6 @@
             </article>
         </section>
     </main>
+</table>
 </body>
 </html>   
